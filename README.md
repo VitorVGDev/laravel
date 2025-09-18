@@ -59,3 +59,62 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+# Trabalho Final: Introdução a Laravel
+
+## CRUD de Produtos
+
+Este projeto é um CRUD simples e moderno de produtos, desenvolvido com Laravel + Blade, seguindo todos os requisitos do trabalho final.
+
+### Funcionalidades
+- Autenticação obrigatória
+- Listar, criar, ver, editar e apagar produtos
+- Validação server-side e mensagens de erro claras
+- Mensagens de sessão (flash) visíveis no layout
+- Telas responsivas e limpas
+
+### Campos da tabela Produtos
+- **nome** (string)
+- **descricao** (text)
+- **preco** (decimal)
+- **data_lancamento** (date)
+- **ativo** (boolean)
+
+### Como instalar e rodar
+1. Clone o repositório
+2. Instale as dependências:
+   ```bash
+   composer install
+   npm install && npm run dev
+   ```
+3. Configure o arquivo `.env` (banco de dados, etc.)
+4. Rode as migrações:
+   ```bash
+   php artisan migrate
+   ```
+5. Gere a chave da aplicação:
+   ```bash
+   php artisan key:generate
+   ```
+6. Crie um usuário de teste (já criado):
+   - Email: **vitor@example.com**
+   - Senha: **1234**
+7. Inicie o servidor:
+   ```bash
+   php artisan serve
+   ```
+8. Acesse [http://localhost:8000](http://localhost:8000)
+
+### O que foi implementado
+- CRUD completo de produtos
+- Validação e feedback claro
+- Mensagens de sessão
+- Telas Blade limpas e responsivas
+- Autenticação ativa
+
+### Vídeo
+Inclua aqui o link ou arquivo do vídeo demonstrando o uso e o tour pelo código.
+
+---
+
+Dúvidas? Fale com o autor.
